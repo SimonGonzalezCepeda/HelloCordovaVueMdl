@@ -5,6 +5,7 @@ import Hello from './components/Hello.vue'
 import Home from './components/Home.vue'
 import Dashboard from './components/Dashboard.vue'
 import Cordova from './components/Cordova.vue'
+import Promos from './components/Promos.vue'
 
 Vue.use(VueRouter)
 
@@ -19,6 +20,7 @@ var router = new VueRouter()
 // Vue.extend(), or just a component options object.
 // We'll talk about nested routes later.
 router.map({
+
   '/hello': {
     component: Hello
   },
@@ -30,6 +32,9 @@ router.map({
   },
   '/cordova': {
     component: Cordova
+  },
+  '/promos': {
+    component: Promos
   }
 })
 // Now we can start the app!

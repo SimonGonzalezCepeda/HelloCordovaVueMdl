@@ -3,6 +3,7 @@
     <div class="mdl-layout__header-row">
       <span class="mdl-layout-title">Home</span>
       <div class="mdl-layout-spacer"></div>
+        <span class="mdl-badge ss-header-badge" data-badge="4">Inbox</span>
       <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
         <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
           <i class="material-icons">search</i>
@@ -39,5 +40,11 @@ export default {
 </script>
 
 <style>
+    span.ss-header-badge{
+        padding: 0 20px;
+    }
 
+    span.ss-header-badge::after{
+        margin: 0 20px;
+    }
 </style>
